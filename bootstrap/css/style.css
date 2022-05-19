@@ -1,0 +1,50 @@
+.card{
+    width: 30%;
+    margin:auto;
+}
+.card .fa-user-top{
+    margin-top: -2rem;
+    font-size: 55px;
+    
+}
+.container{
+    position: relative;
+}
+.container .i{
+    position:absolute;
+    z-index:1;
+    top:0;
+    margin-top: 7px;
+    margin-left: 1.3rem;
+    left: 0;
+}
+li{
+    list-style-type: none;
+}
+.container .eye{
+    position:absolute;
+    z-index:1;
+    top:0;
+    margin-top: 7px;
+    margin-right: 1.3rem;
+    right: 0;
+}
+.color-blue{
+    color: rgb(63, 136, 231);
+}
+.gap{
+    width: 1rem;
+}
+.sign-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+}
+
+@media screen and (max-width:700px) {
+    .card{
+        width: 95%;
+        margin:auto;
+    }
+}
