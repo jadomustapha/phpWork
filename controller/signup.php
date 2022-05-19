@@ -57,19 +57,19 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($fname) && !empty($lname)
 </div>
 <div class="sign-in round">
     <div class="card shadow text-center" style="height:50vh;">
-        <i class="fa fa-user-circle fa-user-top text-primary"></i>
+        <i class="fa fa-user-circle-o fa-user-top text-primary"></i>
         <div class="card-header border-0">
         <strong>Congrat, <?php print $fname; ?></strong>
         </div>
-            <div class="d-flexjustify-content-center">
+            <div class="d-flexjustify-content-center ">
                 <span class="w-75 py-1 px-1 border-primay border" style="border-radius:50px 50px 50px 50px ">
                     <i class="fa fa-user text-primary i"></i>
                     <span><strong><?php print $email; ?></strong></span>
                 </span>
                 
                 <div class="div" style="height:5rem;"></div>
-                <h3>Help us in journey of Trust</h3><br>
-                <h6>Check your email above to confirm email ownership</h6>
+                <h3 class="px-3">Help us in journey of Trust</h3><br>
+                <h6 class="px-3">Check your email above to confirm email ownership</h6>
             </div>
     </div>
 </div>

@@ -68,7 +68,7 @@
                             <td>
                                 <div class="container my-1 pb-4">
                                     <input type="password" name="email" class="form-control px-4" placeholder="Password">
-                                    <i class="fa fa-lock email text-primary i"></i>
+                                    <i class="fa fa-lock email text-primary i" style="left:10px;"></i>
                                 </div>
                             </td>
                         </tr>
@@ -77,7 +77,7 @@
                             <td>
                                 <div class="container my-1 pb-4">
                                     <input type="password" name="email" class="form-control px-4" placeholder="Password">
-                                    <i class="fa fa-lock email text-primary i"></i>
+                                    <i class="fa fa-lock email text-primary i" style="left:10px;"></i>
                                 </div>
                             </td>
                         </tr>

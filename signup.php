@@ -18,7 +18,7 @@
 <!-- end of header section -->
 <div class="sign-in round">
     <div class="card shadow text-center">
-        <i class="fa fa-user-circle fa-user-top text-primary"></i>
+        <i class="fa fa-user-circle-o fa-user-top text-primary"></i>
         <div class="card-header border-0">
             I can't wait to create an account
         </div>
@@ -63,7 +63,7 @@
                     <div style="margin-top:-1.8rem"><span style="background:white; z-index:1;">OR</span></div>
                 </div>
                 <button id="my-signin2" class="btn text-center form-control border-0"></button>
-                <span href="#" class="btn text-center form-control text-danger border-0">Already have Account <a href="#" class="text-center">sign in</a></span>
+                <span href="#" class="btn text-center form-control text-danger border-0">Already have Account <a href="index.php" class="text-center">sign in</a></span>
 
             </div>
         </form>

@@ -16,7 +16,7 @@
 </div>
 <div class="sign-in round">
     <div class="card shadow text-center">
-        <i class="fa fa-user-circle fa-user-top text-primary"></i>
+        <i class="fa fa-user-circle-o fa-user-top text-primary"></i>
         <div class="card-header border-0">
         <h2>Welcome Back!</h2>
         </div>
