@@ -13,6 +13,10 @@ if(isset($email)){
             $_SESSION['emai'] = $data['email'];
             $_SESSION['name'] = $data['fname'];
             header("location:../password.php");
+            if($data['status'] == 0){
+                $_SESSION['error'] = "Your Account is not Verified!";
+                header("location:../index.php");
+            }
         }else{
             $_SESSION['error'] = "Please email not found";
             header("location:../index.php");

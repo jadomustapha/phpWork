@@ -52,7 +52,7 @@
             <div class="container my-1 postion-relative">
                 
                 <input type="password" name="pass" id="pwd" class="form-control px-4" placeholder="Password">
-                <i class="fa fa-lock text-info  position-absolute" style="top:10px;left:17px"></i>
+                <i class="fas fa-key text-info  position-absolute" style="top:10px;left:17px"></i>
                 <i class="fa fa-eye text-info  position-absolute" style="top:10px;right:17px" onclick="show();"></i>
             </div>
             <div class="container my-1">

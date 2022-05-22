@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,30 +63,52 @@
                 </div>
                 <div class="form">
                     <center>
+                   <form action="controller/change_pwd.php" method="post">
                     <table>
-                        <tr>
-                            <td>Current Password</td>
-                            <td>
-                                <div class="container my-1 pb-4">
-                                    <input type="password" name="email" class="form-control px-4" placeholder="Password">
-                                    <i class="fa fa-lock email text-info i" style="left:10px;"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>New Password</td>
-                            <td>
-                                <div class="container my-1 pb-4">
-                                    <input type="password" name="email" class="form-control px-4" placeholder="Password">
-                                    <i class="fa fa-lock email text-info i" style="left:10px;"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="d-flex justify-content-end pb-3 px-4"><button type="submit" name="changep"class="btn btn-info rounded">Set New Password</button></td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td>Current Password</td>
+                                <td>
+                                    <div class="container my-1 pb-4 postion-relative">
+                                        <input type="password" name="cpass" class="form-control px-4" placeholder="Password">
+                                        <i class="fas fa-key text-info  position-absolute" style="top:10px;left:30px"></i>
+                                    </div>
+                                     <!-- Notification -->
+                                        <?php  if(isset($_SESSION['error'])){  ?>
+                                            <div class="alert alert-warning py-2 text-center text-danger" role="alert">
+                                                <strong> <i class="fa fa-warning"></i> Error:</strong> 
+                                                <?php
+                                                        print $_SESSION['error'];
+                                                        unset($_SESSION['error']);
+                                                ?>
+                                            </div>
+                                        <?php } ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>New Password</td>
+                                <td>
+                                    <div class="container my-1 pb-4 postion-relative">
+                                        <input type="password" name="npass" class="form-control px-4" placeholder="Password">
+                                        <i class="fas fa-lock text-info  position-absolute" style="top:10px;left:30px"></i>
+                                    </div>
+                                    <!-- Notification -->
+                                    <?php  if(isset($_SESSION['success'])){  ?>
+                                            <div class="alert alert-warning py-2 text-center text-danger" role="alert">
+                                                <strong> <i class="fa fa-warning"></i> Error:</strong> 
+                                                <?php
+                                                        print $_SESSION['error'];
+                                                        unset($_SESSION['error']);
+                                                ?>
+                                            </div>
+                                        <?php } ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="d-flex justify-content-end pb-3 px-4"><button type="submit" name="changep"class="btn btn-info rounded">Set New Password</button></td>
+                            </tr>
+                        </table>
+                   </form>
                     </center>
                 </div>
             </div>
