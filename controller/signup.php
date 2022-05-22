@@ -6,12 +6,6 @@ $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $email = $_POST['email'];
 $pass = $_POST['pass'];
-$subject = "Verify Your Email";
-
-$header = 'From: ' . $email . '<' . $email . '>' . "\r\n" .
-    'Reply-To: ' . $email . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-    mail($email,$message,$header);
 
     $sql = "SELECT * FROM `users` WHERE `email` = '$email'";
         $res = mysqli_query($conn,$sql);
@@ -34,10 +28,15 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($fname) && !empty($lname)
             $_SESSION['error'] = "Please First name is required!";
             header("location:../signup.php");
         }
-        $message = "
-        <a href='http://localhost/mytest/controller/verify.php?token=".$data['token']."' style='padding:1rem; background:teal; text-decoration:none; color:white; border-radius:7px;'>Verify Your Account</a>
-        ";
-        mail($email,$message,$header);
+        $message = " click this link to 
+        <a href='http://localhost/phpWork/controller/verify.php?token=".$data['token']."' style='padding:0.5rem; background:teal; text-decoration:none; color:white; border-radius:7px;'>Verify Your Account</a>
+        your account";
+        $_SESSION['mailing'] = array(
+            'body'  => $message,
+            'title' => 'Email verification',
+            'receiver'=> $email
+        );
+        header('location:send_email.php');
 ?>
         <!DOCTYPE html>
 <html lang="en">
