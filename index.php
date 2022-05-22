@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="68276321795-l7r2ek7irpfuam1f7nr36frtehhggjfc.apps.googleusercontent.com">
     <title>Sign In</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/style.css">
@@ -71,6 +71,7 @@
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
     }
     function onFailure(error) {
+        window.location='home.php';
       console.log(error);
     }
     function renderButton() {
@@ -78,7 +79,7 @@
         'scope': 'profile email',
         'width':'300',
         'longtitle': true,
-        'background':'red',
+        'background':'#444',
         'theme': 'dark',
         'onsuccess': onSuccess,
         'onfailure': onFailure

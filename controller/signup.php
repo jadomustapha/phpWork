@@ -37,7 +37,7 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($fname) && !empty($lname)
         $message = "
         <a href='http://localhost/mytest/controller/verify.php?token=".$data['token']."' style='padding:1rem; background:teal; text-decoration:none; color:white; border-radius:7px;'>Verify Your Account</a>
         ";
-        // mail($email,$message,$header);
+        mail($email,$message,$header);
 ?>
         <!DOCTYPE html>
 <html lang="en">
