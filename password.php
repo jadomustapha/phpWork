@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,21 +19,41 @@
     <div class="card shadow text-center">
         <i class="fa fa-user-circle-o fa-user-top text-info"></i>
         <div class="card-header border-0">
-        <strong>Congrat, Mustapha</strong>
+        <strong>Congrat,
+                <?php
+                    if(isset($_SESSION['name'])) {
+                        print $_SESSION['name'];
+                    }
+                ?>
+            </strong>
         </div>
-        <form action="" method="post" class="px-3">
+        <form action="controller/check_password.php" method="post" class="px-3">
             
             <div class="d-flexjustify-content-center">
                 <span class="w-75 py-1 px-1 border-primay border" style="border-radius:50px 50px 50px 50px ">
-                    <i class="fa fa-user text-info i"></i>
-                    <span>mustapha@gmail.com</span>
+                    
+                    <span><?php
+                    if(isset($_SESSION['emai'])) {
+                        print "<i class='fa fa-user text-info i'></i> ".$_SESSION['emai'];
+                    }
+                ?></span>
                 </span>
             </div>
             <div class="container my-1 pb-4 postion-relative">
                 <input type="password" name="email" class="form-control px-4" placeholder="Password">
                 <i class="fa fa-envelope text-info  position-absolute" style="top:10px;left:17px"></i>
             </div>
-            
+                        <!-- Notification -->
+                <?php  if(isset($_SESSION['error'])){  ?>
+                    <div class="alert alert-warning py-2 text-center text-danger" role="alert">
+                        <strong> <i class="fa fa-warning"></i> Error:</strong> 
+                        <?php
+                                print $_SESSION['error'];
+                                unset($_SESSION['error']);
+                        ?>
+                    </div>
+                <?php } ?>
+                
             <div class="container my-1">
                 <button type="submit" class="btn btn-info text-center form-control border-0" style="border-radius:50px 50px 50px 50px;">
                     Next

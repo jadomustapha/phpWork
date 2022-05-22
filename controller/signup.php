@@ -22,7 +22,7 @@ $header = 'From: ' . $email . '<' . $email . '>' . "\r\n" .
         }
 
 if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($fname) && !empty($lname) && !empty($pass)){
-    $pass = password_hash($pass, PASSWORD_DEFAULT);
+    // $pass = password_hash($pass, PASSWORD_DEFAULT);
     $sql = "INSERT INTO `users`(`fname`, `lname`, `email`, `password`, `token`)
      VALUES ('$fname','$lname','$email','$pass','$token')";
     $res = mysqli_query($conn,$sql);

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,13 +24,22 @@
         <div class="card-header border-0">
         <h5>Sign In</h5>
         </div>
-        <form action="" method="post" class="px-3">
+        <form action="controller/check_auth.php" method="post" class="px-3">
             
             <div class="container my-1 pb-4 postion-relative">
                 <input type="email" name="email" class="form-control px-4" placeholder="Email">
                 <i class="fa fa-envelope text-info  position-absolute" style="top:10px;left:17px"></i>
             </div>
-            
+            <!-- Notification -->
+        <?php  if(isset($_SESSION['error'])){  ?>
+            <div class="alert alert-warning py-2 text-center text-danger" role="alert">
+                <strong> <i class="fa fa-warning"></i> Error:</strong> 
+                <?php
+                        print $_SESSION['error'];
+                        session_unset();
+                ?>
+            </div>
+        <?php } ?>
             <div class="container my-1">
                 <button type="submit" class="btn btn-info text-center form-control border-0" style="border-radius:50px 50px 50px 50px;">
                     Next
