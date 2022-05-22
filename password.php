@@ -28,9 +28,9 @@
                     <span>mustapha@gmail.com</span>
                 </span>
             </div>
-            <div class="container my-1 pb-4">
+            <div class="container my-1 pb-4 postion-relative">
                 <input type="password" name="email" class="form-control px-4" placeholder="Password">
-                <i class="fa fa-envelope email text-info i"></i>
+                <i class="fa fa-envelope text-info  position-absolute" style="top:10px;left:17px"></i>
             </div>
             
             <div class="container my-1">

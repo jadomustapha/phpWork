@@ -18,7 +18,7 @@
 <!-- end of header section -->
 <div class="sign-in round">
     <div class="card shadow text-center">
-        <i class="fa fa-user-circle-o fa-user-top text-primary"></i>
+        <i class="fa fa-user-circle-o fa-user-top text-info"></i>
         <div class="card-header border-0">
             I can't wait to create an account
         </div>
@@ -35,27 +35,28 @@
         <!-- form container -->
         <form action="controller/signup.php" method="post" class="px-3">
             <div class="d-flex justify-content-between">
-                <div class="container mr-1">
+                <div class="container mr-1 postion-relative">
                     <input type="text" name="fname" class="form-control px-4" placeholder="First name">
-                    <i class="fa fa-user user text-primary i"></i>
+                    <i class="fa fa-user text-info  position-absolute" style="top:10px;left:17px"></i>
                 </div>
                 <div class="gap"></div>
-                <div class="container mr-1">
+                <div class="container mr-1 postion-relative">
                     <input type="text" name="lname" class="form-control px-4" placeholder="Last name">
-                    <i class="fa fa-user user1 text-primary i"></i>
+                    <i class="fa fa-user text-info  position-absolute" style="top:10px;left:17px"></i>
                 </div>
             </div>
-            <div class="container my-1">
+            <div class="container my-1 postion-relative">
                 <input type="email" name="email" class="form-control px-4" placeholder="Email">
-                <i class="fa fa-envelope email text-primary i"></i>
+                <i class="fa fa-envelope text-info  position-absolute" style="top:10px;left:17px"></i>
             </div>
-            <div class="container my-1">
+            <div class="container my-1 postion-relative">
+                
                 <input type="password" name="pass" id="pwd" class="form-control px-4" placeholder="Password">
-                <i class="fa fa-lock email text-primary i"></i>
-                <i class="fa fa-eye eye text-primary" onclick="show();"></i>
+                <i class="fa fa-lock text-info  position-absolute" style="top:10px;left:17px"></i>
+                <i class="fa fa-eye text-info  position-absolute" style="top:10px;right:17px" onclick="show();"></i>
             </div>
             <div class="container my-1">
-                <button type="submit" class="btn btn-primary text-center form-control border-0" style="border-radius:50px 50px 50px 50px;">
+                <button type="submit" class="btn btn-info text-center form-control border-0" style="border-radius:50px 50px 50px 50px;">
                     Next
                 </button>
                 <div>
@@ -71,7 +72,7 @@
     </div>
 </div>
 <!-- footer section -->
-<div class="footer bg-primary py-2 m-0 px-4 d-flex justify-content-between">
+<div class="footer bg-info py-2 m-0 px-4 d-flex justify-content-between">
     <div class="py-2 d-flex">
             <li><a href="#" class="text-white px-2 text-decoration-none">About us</a></li>
             <li><a href="#" class="text-white px-2 text-decoration-none">Advertizemnet</a></li>

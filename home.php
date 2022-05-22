@@ -57,7 +57,7 @@
                 <p>Software Engeneer | Data Analyst</p>
             </div>
             <div class="row mx-0 shadow">
-                <div class="bg-primary border-danger border-3 py-1 border-bottom">
+                <div class="bg-info border-danger border-3 py-1 border-bottom">
                     <i class="fa fa-key"></i>Change Password
                 </div>
                 <div class="form">
@@ -68,7 +68,7 @@
                             <td>
                                 <div class="container my-1 pb-4">
                                     <input type="password" name="email" class="form-control px-4" placeholder="Password">
-                                    <i class="fa fa-lock email text-primary i" style="left:10px;"></i>
+                                    <i class="fa fa-lock email text-info i" style="left:10px;"></i>
                                 </div>
                             </td>
                         </tr>
@@ -77,13 +77,13 @@
                             <td>
                                 <div class="container my-1 pb-4">
                                     <input type="password" name="email" class="form-control px-4" placeholder="Password">
-                                    <i class="fa fa-lock email text-primary i" style="left:10px;"></i>
+                                    <i class="fa fa-lock email text-info i" style="left:10px;"></i>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="d-flex justify-content-end pb-3 px-4"><button type="submit" name="changep"class="btn btn-primary rounded">Set New Password</button></td>
+                            <td class="d-flex justify-content-end pb-3 px-4"><button type="submit" name="changep"class="btn btn-info rounded">Set New Password</button></td>
                         </tr>
                     </table>
                     </center>
@@ -91,7 +91,7 @@
             </div>
         </div>
         <div class="col-md-4 md-sm-12 p-0 m-0 right">
-            <li class="border-primary border-top border-2 shadow text-primary">Account Settings</li>
+            <li class="border-primary border-top border-2 shadow text-info">Account Settings</li>
             <ul class="px-0 mx-0 mt-1">
                     <li class="border-primary border-bottom border-2 hadow mb-2">
                         <a href="#" class="mx-4 text-decoration-none text-black"><i class="fa-fa-edit"></i> Edit Profile</a>
@@ -130,7 +130,7 @@
       
       [footer]
     -->
-<div class="footer bg-primary py-2 m-0 px-4 d-flex justify-content-between">
+<div class="footer bg-info py-2 m-0 px-4 d-flex justify-content-between">
     <div class="py-2 d-flex">
             <li><a href="#" class="text-white px-2 text-decoration-none">About us</a></li>
             <li><a href="#" class="text-white px-2 text-decoration-none">Advertizemnet</a></li>
