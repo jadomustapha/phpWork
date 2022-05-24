@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="m-0 bg-danger text-center py-2 text-white">
@@ -49,6 +50,11 @@
                     <div style="margin-top:-0.8rem"><span style="background:white; z-index:1;">OR</span></div>
                 </div>
                 <button id="my-signin2" class="btn text-center form-control border-0"></button>
+            </div>
+            <div class="container my-1">
+                <a href="signup.php" class="btn text-danger text-center form-control border-0" style="border-radius:50px 50px 50px 50px;">
+                    Create New Account
+                </a>
             </div>
         </form>
     </div>

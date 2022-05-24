@@ -1,4 +1,6 @@
 <?php 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 session_start();
 require_once "../config/config.php";
 $token = bin2hex(openssl_random_pseudo_bytes(16));
@@ -28,15 +30,42 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($fname) && !empty($lname)
             $_SESSION['error'] = "Please First name is required!";
             header("location:../signup.php");
         }
-        $message = " click this link to 
+        $body = "<h3> click this link to 
         <a href='http://localhost/phpWork/controller/verify.php?token=".$data['token']."' style='padding:0.5rem; background:teal; text-decoration:none; color:white; border-radius:7px;'>Verify Your Account</a>
-        your account";
-        $_SESSION['mailing'] = array(
-            'body'  => $message,
-            'title' => 'Email verification',
-            'receiver'=> $email
-        );
-        header('location:send_email.php');
+        your account</h3>";
+
+// [sending email]
+//         ==========================================================================================
+// [sending email]
+$error=NULL;
+  require '../vendor/autoload.php';
+$mail = new PHPMailer(true);
+try {
+  // $mail->SMTPDebug = 2;                  
+  $mail->isSMTP(true);                      
+  $mail->Host  = 'smtp.gmail.com;';         
+  $mail->SMTPAuth = true;             
+  $mail->Username = 'pattiradu@gmail.com';        
+  $mail->Password = 'patrick9876';            
+  $mail->SMTPSecure = 'tls';              
+  $mail->Port  = 587;
+
+  $mail->setFrom('jadoiconic@gmail.com', 'Email verification link');    
+  $mail->addAddress($email);
+  $mail->isHTML(true);                
+  $mail->Subject = 'Email verification';
+  $mail->Body = $body;
+  $mail->AltBody = 'Body in plain text for non-HTML mail clients';
+  $mail->send();
+//   print "message sent";
+//   header('location:send_email.php');
+  
+} catch (Exception $e) {
+  echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
+// [/sending email]
+// =========================================================================
+// [/sending email]
 ?>
         <!DOCTYPE html>
 <html lang="en">

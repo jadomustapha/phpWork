@@ -9,6 +9,7 @@
     <title>Sign In</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -59,12 +60,14 @@
                 <button type="submit" class="btn btn-info text-center form-control border-0" style="border-radius:50px 50px 50px 50px;">
                     Next
                 </button>
-                <div>
+                <div class="position-relative">
                     <hr style="postion:relative">
                     <div style="margin-top:-1.8rem"><span style="background:white; z-index:1;">OR</span></div>
                 </div>
                 <button id="my-signin2" class="btn text-center form-control border-0"></button>
-                <span href="#" class="btn text-center form-control text-danger border-0">Already have Account <a href="index.php" class="text-center">sign in</a></span>
+                <span href="#" class="btn text-center form-control text-danger border-0">
+                    Already have Account <a href="index.php" class="text-center">sign in</a>
+                </span>
 
             </div>
         </form>
