@@ -45,15 +45,15 @@ try {
   $mail->isSMTP(true);                      
   $mail->Host  = 'smtp.gmail.com;';         
   $mail->SMTPAuth = true;             
-  $mail->Username = 'pattiradu@gmail.com';        
-  $mail->Password = 'patrick9876';            
+  $mail->Username = 'jadoiconic@gmail.com';        
+  $mail->Password = 'sndrec123451';            
   $mail->SMTPSecure = 'tls';              
   $mail->Port  = 587;
 
   $mail->setFrom('jadoiconic@gmail.com', 'Email verification link');    
   $mail->addAddress($email);
   $mail->isHTML(true);                
-  $mail->Subject = 'Email verification';
+  $mail->Subject = 'Php work Email verification';
   $mail->Body = $body;
   $mail->AltBody = 'Body in plain text for non-HTML mail clients';
   $mail->send();

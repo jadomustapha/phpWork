@@ -53,10 +53,50 @@
                     <h5 style="padding:7px;">Headlines <i class="fa fa-pencil" aria-hidden="true"></i> </h5> 
                     <hr>
                     <h6 style="padding:7px;">Software development workers</h6>
-                    
+                    <h2 class="bt-info text-white bg-info" style="font-size:14px; height:30px;padding:7px; padding:6px;">
+                        <i class="fas fa-key " aria-hidden="true"></i>
+                        Change Password
+                    </h2>
                 </div>
                 <div class="div">
-                    
+                    <table>
+                    <tr>
+                        <td style="padding:20px;">Current Password</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <div class="position-relative">
+                    <td>
+                        <!-- <i class="fas fa-key text-info" aria-hidden="true" style="position:absolute; top:268px;left:150px;"></i> -->
+                        <input type="password" name="current_password" id="" class="form-control">
+                        </td>
+                    </div>
+                    </tr>
+                    <tr>
+                        <div class="position:relative;">
+                        <td style="padding:20px;">New Password</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <div class="position-relative">
+                                <input type="password" name="new_password" id="" class="form-control">
+                                <i class="fas fa-key text-info position-absolute" aria-hidden="true" style="top:10px;left:15px;"></i>
+                            </div>
+                        </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="" id="">
+                            Remind me to change password for each three months
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td> <button type="submit" class="btn btn-info my-3 mx-5">Set New Password</button></td>
+                    </tr>
+                   
+                </table>
                 </div>
         </div>
         <div class="col-md-5 col-sm-12 px-3 h-25">

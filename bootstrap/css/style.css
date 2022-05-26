@@ -32,9 +32,6 @@ li{
 .color-blue{
     color: rgb(63, 136, 231);
 }
-.gap{
-    width: 1rem;
-}
 .sign-in{
     display: flex;
     justify-content: center;

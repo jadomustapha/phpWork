@@ -35,34 +35,33 @@
         <?php } ?>
         <!-- form container -->
         <form action="controller/signup.php" method="post" class="px-3">
-            <div class="d-flex justify-content-between">
-                <div class="container mr-1 postion-relative">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 position-relative m-0">
                     <input type="text" name="fname" class="form-control px-4" placeholder="First name">
                     <i class="fa fa-user text-info  position-absolute" style="top:10px;left:17px"></i>
                 </div>
-                <div class="gap"></div>
-                <div class="container mr-1 postion-relative">
+                <div class="col-md-6 col-sm-12 position-relative">
                     <input type="text" name="lname" class="form-control px-4" placeholder="Last name">
                     <i class="fa fa-user text-info  position-absolute" style="top:10px;left:17px"></i>
                 </div>
             </div>
-            <div class="container my-1 postion-relative">
+            <div class="my-1 position-relative">
                 <input type="email" name="email" class="form-control px-4" placeholder="Email">
-                <i class="fa fa-envelope text-info  position-absolute" style="top:10px;left:17px"></i>
+                <i class="fa fa-envelope text-info  position-absolute" style="top:10px;left:8px"></i>
             </div>
-            <div class="container my-1 postion-relative">
+            <div class="my-1 position-relative">
                 
                 <input type="password" name="pass" id="pwd" class="form-control px-4" placeholder="Password">
-                <i class="fas fa-key text-info  position-absolute" style="top:10px;left:17px"></i>
+                <i class="fas fa-key text-info  position-absolute" style="top:10px;left:8px"></i>
                 <i class="fa fa-eye text-info  position-absolute" style="top:10px;right:17px" onclick="show();"></i>
             </div>
             <div class="container my-1">
                 <button type="submit" class="btn btn-info text-center form-control border-0" style="border-radius:50px 50px 50px 50px;">
                     Next
                 </button>
-                <div class="position-relative">
-                    <hr style="postion:relative">
-                    <div style="margin-top:-1.8rem"><span style="background:white; z-index:1;">OR</span></div>
+                <div>
+                    <div style="postion:relative;height:2px;background:gray; margin-top:1rem;"></div>
+                    <div style="margin-top:-0.8rem"><span style="background:white; z-index:1;">OR</span></div>
                 </div>
                 <button id="my-signin2" class="btn text-center form-control border-0"></button>
                 <span href="#" class="btn text-center form-control text-danger border-0">
